@@ -1,0 +1,55 @@
+<!--pages/init/init.wxml-->
+<!-- <text>pages/init/init.wxml</text> -->
+<view>
+  <!-- <text>{{tips}}</text> -->
+  <div class="form-wrap" wx:if="{{gameStatus === 0}}">
+    <label class="form-item-wrap">
+      <text class="form-item-label">游戏人数：</text>
+      <input class="normal-input" type="number" bindinput="bindPlayerInput" value="{{playerNumber}}" />
+    </label>
+
+    <label class="form-item-wrap">
+      <text class="form-item-label">卧底人数：</text>
+      <input class="normal-input" type="number" bindinput="bindXmanInput" value="{{xmanNumber}}" />
+    </label>
+
+    <label class="form-item-wrap">
+      <text class="form-item-label">白板人数：</text>
+      <input class="normal-input" type="number" bindinput="bindBlankInput" value="{{blankNumber}}" />
+    </label>
+    <div class="opt-wrap">
+      <button class="xman-button" bindtap="initXman">开始游戏</button>
+    </div>
+  </div>
+  <block wx:else>
+    <block wx:if="{{gameStatus === 1 && currentPlayer < playerNumber}}">
+    <div class="deal-wrap" bindtap="confirmWord" >
+      <text class="highlight-user">{{currentPlayer + 1}}号玩家</text>
+      <text>点击查看自己的词语</text>
+    </div>
+      <div class="handle-repeat-wrap">
+        <button bindtap="continueGame">重新发词</button>
+      </div>
+    </block>
+    <div class="id-list-wrap" wx:else>
+      <div class="result-notice-wrap">
+        <text wx:if="{{gameStatus === 2}}">游戏结束,{{result}}</text>
+        <text wx:if="{{gameStatus === 1}}">点击玩家翻牌</text>
+      </div>
+      <view style="display:block;">
+        <div wx:for="{{cards}}" class="player-wrap {{item.status === 1 ? 'alive-style' : 'dead-style'}}" bindtap="exposePlayer" data-index="{{index}}">
+          <block wx:if="{{item.status === 1}}" class="alive-style">
+            <text>{{index + 1}}号玩家,存活</text>
+          </block>
+          <block wx:else>
+            <text>{{index + 1}}号玩家,{{item.role}}死亡💀</text>
+          </block>
+        </div>
+      </view>
+    </div>
+  <div class="action-wrap" wx:if="{{gameStatus === 2}}">
+    <button class="xman-button" bindtap="continueGame">继续游戏</button>
+    <button bindtap="restartGame">重新开始</button>
+  </div>
+  </block>
+</view>

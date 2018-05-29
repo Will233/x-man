@@ -1,0 +1,133 @@
+/* pages/init/init.wxss */
+/* Gold #fdb64a */
+.form-wrap {
+  display: block;
+  width: 90%;
+  height: 400rpx; 
+  margin: 0 auto;
+}
+.form-item-wrap {
+  display: block;
+  width: 100%;
+  height: 50rpx;
+  padding: 10rpx 0;
+  margin: 10rpx 0;
+}
+.form-item-wrap .form-item-label {
+  display: block;
+  width: 30%;
+  float: left;
+}
+.form-item-wrap .normal-input {
+  width: 70%;
+  float: left; 
+  border-bottom: solid 1rpx #ddd;
+}
+
+.opt-wrap {
+  display: block;
+  margin: 0 auto;
+  padding-top: 50rpx; 
+}
+
+.opt-wrap button {
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  color: #fdb64a;
+  background: #fff;
+  border: solid 1rpx #fdb64a;
+  border-radius: 80rpx;
+}
+
+.deal-wrap {
+  display: block;
+  width: 90%;
+  padding: 0 10%;
+  box-sizing: border-box;
+  margin: 0 auto;
+  height: 300rpx;
+  padding-top: 50rpx;
+  line-height: 100rpx;
+  text-align: center;
+  background: #ddd;
+  border-radius: 10rpx;
+  /*border: solid 1rpx #fdb64a;*/
+  border: solid 1rpx #888;
+  box-shadow: 1rpx 2rpx 2rpx #888;
+  font-size: 30rpx;
+}
+.deal-wrap .highlight-user {
+  display: block;
+  line-height: 100rpx;
+  font-size: 36rpx;
+}
+
+.player-wrap {
+  display: block;
+  width: 90%;
+  height: 80rpx;
+  line-height: 80rpx;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 10rpx;
+  background: #eee;
+  border-radius: 10rpx;
+}
+
+.alive-style {
+  background: #fff;
+  border: solid 1rpx #dfdfdf;
+}
+.dead-style {
+  background: #ccc;
+}
+
+.result-notice-wrap {
+  display: block;
+  width: 90%;
+  height: 80rpx;
+  line-height: 80rpx;
+  background: #fdb64a;
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+}
+.handle-repeat-wrap {
+  display: block;
+  width: 90%;
+  height: 220rpx;
+  margin: 0 auto;
+  margin-top: 50rpx; 
+}
+.handle-repeat-wrap button{
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 36rpx;
+  border-radius: 80rpx;
+  margin-top: 20rpx;
+  color: #666;
+}
+.action-wrap {
+  display: block;
+  width: 90%;
+  height: 220rpx;
+  margin: 0 auto;
+  margin-top: 50rpx; 
+}
+
+.action-wrap button {
+  width: 100%;
+  height: 80rpx;
+  line-height: 80rpx;
+  font-size: 36rpx;
+  border-radius: 80rpx;
+  margin-top: 20rpx;
+}
+
+button.xman-button {
+  color: #fdb64a;
+  background: #fff;
+  border: solid 1rpx #fdb64a;
+}

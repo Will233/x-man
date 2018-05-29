@@ -1,0 +1,11 @@
+<!--pages/welcome/welcome.wxml-->
+<view>
+  <div class="app-info">
+    <div class="icon-wrap">
+    </div>
+    <text class="app-name">{{title}}</text>
+  </div>
+  <div class="opt-wrap">
+    <button bindtap="enterGame">进入游戏</button>
+  </div>
+</view>
