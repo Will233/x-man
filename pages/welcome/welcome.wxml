@@ -8,4 +8,7 @@
   <div class="opt-wrap">
     <button bindtap="enterGame">进入游戏</button>
   </div>
+  <div class="customer-server-mail">
+    <a href="mailto:whoisxman@163.com">有问题联系我：whoisxman@163.com</a>
+  </div>
 </view>
