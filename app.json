@@ -3,8 +3,7 @@
     "pages/welcome/welcome",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/init/init",
-    "pages/deal/deal"
+    "pages/init/init"
   ],
   "window": {
     "backgroundTextStyle": "light",
