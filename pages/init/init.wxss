@@ -108,6 +108,7 @@
   border-radius: 80rpx;
   margin-top: 20rpx;
   color: #666;
+  border: solid 1px #ddd;
 }
 .action-wrap {
   display: block;

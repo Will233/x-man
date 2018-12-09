@@ -9,3 +9,6 @@
   box-sizing: border-box;
   background: #dfdfdf;
 } 
+button::after {
+  border: 0;
+}
